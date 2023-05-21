@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>TravelAz</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Логотип">
+      <p style="color: #f04e4e; font-size: 50px; margin: 0px; margin-top: 20px;">Откройте для себя направление</p>
+      <p style="color: black; font-size: 50px; margin: 0px;">Азербайджан</p>
+    </div>
+    <nav>
+      <ul>
+        <li><button class="login-button" onclick="openModal('login-modal')">Войти</button></li>
+        <li><button class="login-button" onclick="openModal('register-modal')">Регистрация</button></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="button-block">
+    <button onclick="scrollToSection('#hotels')">Проживание</button>
+    <button onclick="scrollToSection('#ent')">Развлечения</button>
+    <button onclick="scrollToSection('#rest')">Рестораны</button>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <script src="script.js"></script>
+        <img src="https://arquitecturaviva.com/assets/uploads/obras/43853/av_imagen.jpeg" alt="Slide 1">
+        <div class="swiper-slide-text">Погрузитесь в Азербайджан</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://arquitecturaviva.com/assets/uploads/obras/43853/av_imagen.jpeg" alt="Slide 2">
+        <div class="swiper-slide-text">Погрузитесь в Азербайджан</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://arquitecturaviva.com/assets/uploads/obras/43853/av_imagen.jpeg" alt="Slide 3">
+        <div class="swiper-slide-text">Погрузитесь в Азербайджан</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="box-shadow: 2px 2px 10px #888888;">
+    <div class="left-block">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6278442.513133422!2d38.22616322002829!3d39.7925044999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307cd91aa21ddf%3A0xe6c9526b3e83cd08!2z0JDQt9C10YDQsdCw0LnQtNC20LDQvQ!5e0!3m2!1sru!2saz!4v1682501221182!5m2!1sru!2saz" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="right-block">
+      <h2>Исторические Памятники Азербаджана</h2>
+      <p>​Азербайджан - это страна с богатой историей, которая насчитывает множество уникальных исторических памятников. Некоторые из них датируются несколькими тысячелетиями назад и являются свидетельством давних времен и культурных традиций.</p>
+      <p>​На нашем сайте вы найдете информацию об известных и малоизвестных исторических памятниках Азербайджана, их историю, архитектуру и культурное значение. Мы приглашаем вас отправиться в увлекательное путешествие по нашей стране и познакомиться с ее наследием, которое до сих пор удивляет своей красотой и масштабом.</p>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Азербайджан: самое интересное</h2>
+  </div>
+  <div class="accommodation-block" id="hotels">
+    <h2>Проживание</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="image-block">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/de/ba/b8/twin-room.jpg?w=400&h=300&s=1" alt="Фото">
+          <h3>Tourist Hotel Baku</h3>
+          <p>Баку, Азербайджан</p>
+          <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="image-block">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/19/b7/d3/exterior.jpg?w=400&h=300&s=1" alt="Фото">
+          <h3>Отель и спа Şahdağ</h3>
+          <p>Кусары, Азербайджан</p>
+          <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="image-block">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/de/a4/66/bird-view-of-the-hotel.jpg?w=400&h=300&s=1" alt="Фото">
+          <h3>Qalaalti Hotel & Spa</h3>
+          <p>Галаалты, Азербайджан</p>
+          <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accommodation-block" id="ent">
+    <h2>Развлечения</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="image-block">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/83/1a/58/heydar-aliyev-center.jpg?w=400&h=300&s=1" alt="Фото">
+          <h3>Культурный центр Гейдара Алиева</h3>
+          <p>Баку, Азербайджан</p>
+          <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="image-block">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/25/ba/3b/caption.jpg?w=400&h=300&s=1" alt="Фото">
+          <h3>Джума-мечеть</h3>
+          <p>Шемахы, Азербайджан</p>
+          <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="image-block">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/19/8d/b1/getlstd-property-photo.jpg?w=400&h=300&s=1" alt="Фото">
+          <h3>Savalan ASPI Winery</h3>
+          <p>Кабала, Азербайджан</p>
+          <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accommodation-block" id="rest">
+    <h2>Рестораны</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="image-block">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/bf/87/10/terrace-view.jpg?w=400&h=300&s=1" alt="Фото">
+          <h3>Green Garden 145</h3>
+          <p>Баку, Азербайджан</p>
+          <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="image-block">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/12/15/99/caption.jpg?w=400&h=300&s=1" alt="Фото">
+          <h3>Хыдыр</h3>
+          <p>Кусары, Азербайджан</p>
+          <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="image-block">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/3f/4f/ff/photo8jpg.jpg?w=400&h=300&s=1" alt="Фото">
+          <h3>Khan Lankaran Restaurant</h3>
+          <p>Ленкорань, Азербайджан</p>
+          <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('login-modal')">&times;</span>
+
+      <div class="login-form">
+        <h2>Вход</h2>
+        <form>
+          <label for="login-email">Email:</label>
+          <input type="email" id="login-email" name="login-email" required>
+
+          <label for="login-password">Пароль:</label>
+          <input type="password" id="login-password" name="login-password" required>
+
+          <button type="submit">Войти</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="register-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('register-modal')">&times;</span>
+
+      <div class="register-form">
+        <h2>Регистрация</h2>
+        <form>
+          <label for="register-email">Email:</label>
+          <input type="email" id="register-email" name="register-email" required>
+
+          <label for="register-password">Пароль:</label>
+          <input type="password" id="register-password" name="register-password" required>
+
+          <label for="confirm-password">Подтвердите пароль:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+
+          <button type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = 'block';
+    }
+
+    function closeModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>

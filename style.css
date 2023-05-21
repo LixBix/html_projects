@@ -1,0 +1,327 @@
+header {
+    display: flex; /* Расположение элементов в ряд */
+    justify-content: space-between; /* Выравнивание элементов по горизонтали */
+    padding: 20px; /* Отступы внутри элемента */
+    color: #fff; /* Цвет текста */
+    justify-content: flex-end;
+    font-family: 'Roboto', sans-serif;
+    width: 95%;
+    height: 100%;  
+  }
+  
+  /* Стили для навигационного меню */
+  nav ul {
+    display: flex; /* Расположение элементов в ряд */
+    list-style: none; /* Удаление маркеров списка */
+    margin: 0; /* Удаление внешних отступов списка */
+    padding: 0; /* Удаление внутренних отступов списка */
+  }
+  
+  /* Стили для пунктов навигационного меню */
+  nav li {
+    margin-left: 20px; /* Отступы между пунктами меню */
+    
+  }  
+
+.logo {
+  flex: 0 0 auto; /* Фиксированная ширина для элемента логотипа */
+  order: 0; /* Меняем порядок элемента на первый внутри контейнера */
+  margin-right: auto; /* Отступ справа устанавливаем как auto, чтобы элемент сдвинулся влево */
+}
+
+.logo img {
+  max-height: 50px; /* Максимальная высота логотипа */
+}
+
+/* Устанавливает ширину и высоту контейнера слайдера на 100% и 400px соответственно */
+.swiper-container {
+  width: 100%;
+  height: 50%;
+  position: relative; /* Относительное позиционирование */
+  z-index: 1; /* Верхний слой */
+}
+
+.swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .swiper-slide img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .swiper-slide-text {
+      margin-top: 10px;
+    }
+/* Устанавливает горизонтальное выравнивание содержимого слайда по центру и позиционирование слайда относительно родительского элемента */
+.swiper-slide {
+text-align: center;
+position: relative;
+}
+
+/* Устанавливает ширину и высоту изображения на 100%, а также заполнение изображения в соответствии с размером блока слайда с использованием object-fit: cover; */
+.swiper-slide img {
+width: 100%;
+height: 50%;
+object-fit: cover;
+}
+
+/* Устанавливает позиционирование текста внутри слайда (абсолютно), а также горизонтальное и вертикальное выравнивание текста по центру слайда */
+.swiper-slide-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 24px;
+font-weight: bold;
+font-family: 'Roboto', sans-serif;
+}
+
+/* Определяем стиль для контейнера, используя flexbox*/
+.container {
+display: flex;
+justify-content: space-between; /* Располагаем элементы контейнера с равными промежутками между ними */
+align-items: center; /* Выравниваем элементы по центру*/
+ margin: 150px;
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+
+/* Определяем стиль для левого блока*/
+.left-block {
+flex: 1; /* Левый блок будет занимать одну равную часть ширины контейнера*/
+margin-right: 20px; /* Добавляем отступ справа от левого блока*/
+width: 40%;
+}
+
+.left-block img {
+  max-width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+/* Определяем стиль для правого блока*/
+.right-block {
+flex: 1; /* Правый блок также будет занимать одну равную часть ширины контейнера*/
+}
+
+/* Определяем стиль для заголовка*/
+h2 {
+font-family: "Roboto", sans-serif; /* Устанавливаем шрифт*/
+font-size: 24px; /* Устанавливаем размер шрифта*/
+margin-bottom: 10px; /* Добавляем отступ снизу от заголовка*/
+}
+h3 {
+font-family: "Roboto", sans-serif; /* Устанавливаем шрифт*/
+font-size: 24px; /* Устанавливаем размер шрифта*/
+margin-bottom: 10px; /* Добавляем отступ снизу от заголовка*/
+}
+/* Определяем стиль для абзаца*/
+p {
+font-family: "Roboto", sans-serif; /* Устанавливаем шрифт*/
+font-size: 18px; /* Устанавливаем размер шрифта*/
+  
+}
+.rating {
+  font-size: 20px;
+}
+
+.accommodation-block {
+  display: flex;
+   margin: 150px;
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+
+
+.accommodation-block h2 {
+  flex: 0 0 200px; /* Ширина блока заголовка */
+}
+.rest-block h2 {
+  flex: 0 0 200px; /* Ширина блока заголовка */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+}
+
+
+.grid-item {
+  /* Стили плиток */
+  margin-left: 20px; /* Левый отступ */
+  margin-right: 20px; /* Правый отступ */
+}
+
+
+.image-block {
+  position: relative;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image-block h3, .image-block p {
+  margin: 10px 0;
+}
+
+
+.login-button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.login-button:hover {
+  background-color: gray; /* Цвет подсветки при наведении */
+}
+.button-block {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px; /* Отступы по бокам */
+}
+
+.button-block button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px 30px; /* Изменение размеров кнопок */
+  margin-right: 10px;
+  margin-bottom: 20px;
+  transform: scale(1.3); /* Увеличение размеров кнопок на 50% */
+}
+
+.button-block button:hover {
+  background-color: #eaeaea; /* Цвет подсветки при наведении */
+}
+
+.button-block button + button {
+  margin-left: 50px; /* Дополнительный отступ между кнопками */
+}
+
+.button-block button:last-child {
+  margin-right: 0;
+}
+
+
+.modal {
+  display: none; /* Изначально скрываем модальное окно */
+  position: fixed; /* Позиционируем модальное окно фиксированно */
+  z-index: 999; /* Устанавливаем высокий z-index, чтобы модальное окно отображалось поверх остального содержимого */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Добавляем прокрутку, если содержимое модального окна не помещается на экране */
+  background-color: rgba(0, 0, 0, 0.5); /* Задаем полупрозрачный черный фон */
+}
+
+/* Стили модального окна */
+.modal-content {
+  position: relative;
+  z-index: 1;
+  background-color: #fefefe;
+  margin: 20% auto; /* Отступы для центрирования модального окна */
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 400px; /* Максимальная ширина модального окна */
+  box-sizing: border-box; /* Учесть отступы и границы при вычислении размеров */
+  overflow: hidden; /* Скрыть содержимое, выходящее за пределы окна */
+}
+
+/* Стили полей ввода в модальном окне */
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+  width: 100%; /* Занимать 100% ширины окна */
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  box-sizing: border-box; /* Учесть отступы и границы при вычислении размеров */
+}
+
+/* Стили кнопки отправки в модальном окне */
+.modal-content button[type="submit"] {
+  width: 100%; /* Занимать 100% ширины окна */
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box; /* Учесть отступы и границы при вычислении размеров */
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+.close {
+  color: #888; /* Задаем цвет иконки закрытия */
+  float: right; /* Выравниваем иконку закрытия справа */
+  font-size: 28px; /* Задаем размер иконки закрытия */
+  font-weight: bold;
+  cursor: pointer; /* Делаем курсор указателем при наведении на иконку закрытия */
+}
+
+.close:hover,
+.close:focus {
+  color: #000; /* Изменяем цвет иконки закрытия при наведении */
+}
+
+/* Стили формы входа */
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form button[type="submit"] {
+  display: block; /* Делаем элементы формы блочными, чтобы они занимали всю ширину */
+  width: 100%; /* Занимаем всю доступную ширину контейнера */
+  padding: 10px; /* Добавляем отступы вокруг элементов формы */
+  margin-bottom: 10px; /* Добавляем отступ снизу между элементами формы */
+  font-size: 16px; /* Задаем размер шрифта элементов формы */
+}
+
+.login-form button[type="submit"] {
+  background-color: #4CAF50; /* Задаем цвет фона кнопки отправки формы */
+  color: #fff; /* Задаем цвет текста кнопки */
+  border: none; /* Удаляем границу кнопки */
+  cursor: pointer; /* Делаем курсор указателем при наведении на кнопку */
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #45a049; /* Изменяем цвет фона кнопки при наведении */
+}
+
+/* Стили формы регистрации */
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.register-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.register-form button[type="submit"]:hover {
+  background-color: #45a049;
+
+
